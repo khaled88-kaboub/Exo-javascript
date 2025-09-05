@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test JS</title>
+  </head>
+  <body>
+    <h1>EXERCICE4</h1>
+    <script>
+   // let msg = prompt("Convertisseur c vers F");
+let deg = prompt("Convertisseur c vers F, Entrer une temperature en cilcius : ");
+let feh
+// Convert input to a number
+deg = parseFloat(deg);
+
+// Check if input is a valid number
+if (isNaN(deg) ) {
+    alert("Invalid input. Please enter a positive number.");
+} else {
+    // Calculate VAT (18%)
+     feh = (deg * (9/5)) + 32
+      //feh = (${deg} * (9/5)) + 32;
+}
+alert("la temperature en F est: " + feh)
+
+//***************************************************************
+
+//let msg2 = prompt("Convertisseur F vers C");
+let fehr = prompt("Convertisseur F vers C, Entrer une temperature en Fehr : ");
+let celci
+// Convert input to a number
+fehr = parseFloat(fehr);
+
+// Check if input is a valid number
+if (isNaN(fehr) ) {
+    alert("Invalid input. Please enter a positive number.");
+} else {
+    // Calculate VAT (18%)
+     celci = (fehr - 32) /9*5
+      //feh = (${deg} * (9/5)) + 32;
+}
+alert("la temperature en C est: " + celci)
+
+
+    </script>
+  </body>
+</html

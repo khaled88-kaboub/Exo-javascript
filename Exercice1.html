@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test JS</title>
+  </head>
+  <body>
+    <h1>EXERCICE1</h1>
+    <script>
+      let rawPrice = prompt("Enter the raw price:");
+
+// Convert input to a number
+rawPrice = parseFloat(rawPrice);
+
+// Check if input is a valid number
+if (isNaN(rawPrice) || rawPrice < 0) {
+    alert("Invalid input. Please enter a positive number.");
+} else {
+    // Calculate VAT (18%)
+    const vatRate = 0.18;
+    const vatAmount = rawPrice * vatRate;
+
+    // Calculate final price
+    const finalPrice = rawPrice + vatAmount;
+
+    // Show result
+    alert(`Raw Price: $${rawPrice.toFixed(2)}\nVAT (18%): $${vatAmount.toFixed(2)}\nFinal Price: $${finalPrice.toFixed(2)}`);
+}
+
+    </script>
+  </body>
+</html

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test JS</title>
+  </head>
+  <body>
+    <h1>EXERCICE1</h1>
+    <script>
+        let voy = prompt("Saisir une chaine de carracteres qui contient des voyelles :");
+      function comptage(str) {
+  const voyelles = "aeiouAEIOU";
+  let count = 0;
+
+  for (let char of str) {
+    if (voyelles.includes(char)) {
+      count++;
+    }
+  }
+
+  return count;
+}
+alert("Nombre de voyelles est : " + comptage(voy))
+
+
+    </script>
+  </body>
+</html

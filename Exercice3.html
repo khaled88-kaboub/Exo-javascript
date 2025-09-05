@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test JS</title>
+  </head>
+  <body>
+    <h1>EXERCICE3: liste = [3,11,7,2,9,10]</h1>
+    <script>
+     constvalues = [3,11,7,2,9,10]
+//calculte sum
+let somme=0
+for (let value of constvalues) {
+    somme+= value
+}
+alert("La somme est : " + somme)
+//function calculates average
+function moyenne(liste) {
+    moy = somme / liste.length
+    return moy
+}
+alert("la moyenne est : " + moyenne(constvalues))
+
+//function calculates max
+function max(liste) {
+    return Math.max(...liste)
+}
+alert("Le maximum de liste est: " + max(constvalues))
+
+//function calculates min
+function min(liste) {
+    return Math.min(...liste)
+}
+alert("Le minimum de liste est: " + min(constvalues))
+
+
+   
+
+    </script>
+  </body>
+</html

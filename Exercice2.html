@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test JS</title>
+  </head>
+  <body>
+    <h1>EXERCICE2</h1>
+    <script>
+     let nombre = prompt("Enter a number between 2 and 9:");
+
+// Convert input to a number
+nombre = parseFloat(nombre);
+
+// Check if input is a valid number
+if (isNaN(nombre) || (nombre >= 9) || (nombre <= 2)) {
+    alert("Invalid input. Please enter a number between 2 and 9.");
+} else {
+    // table de multiplication
+    for (let i=0;i<=10; i++) {
+        alert(`${nombre} x ${i}= ${nombre*i}`);
+    }}
+
+
+    </script>
+  </body>
+</html
